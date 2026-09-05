@@ -1,0 +1,42 @@
+# Build / IDE
+build/
+out/
+dist/
+cmake-build-*/
+.vs/
+.vscode/
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Native / packaging
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.msi
+*.zip
+!docs/**
+
+# Secrets / local
+.env
+.env.*
+*.local
+
+# MSYS2 / CMake caches
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json

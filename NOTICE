@@ -1,0 +1,8 @@
+artist-mirror
+Copyright (c) 2026 artist-mirror contributors
+
+This product will incorporate third-party open-source components.
+Attributions will be listed here as receive-stack and media dependencies are vendored
+(for example UxPlay lineage, GStreamer plugins, and mDNS helpers).
+
+Until those components are included in the tree, this NOTICE is a stub.
