@@ -1,8 +1,16 @@
 # Artist smoke checklist
 
-Stub for U1. Fill in after receive + shell work.
+## U2 — Receive stack (dev machine)
 
-## F1 — First successful mirror
+- [x] MSYS2 installed (`C:\msys64`)
+- [x] UCRT64 deps installed (cmake, gcc, gstreamer plugins, libplist)
+- [x] `.\receiver\build.ps1` produces `receiver\uxplay\build\uxplay.exe`
+- [x] `.\receiver\run.ps1` / `uxplay.exe` starts without immediate crash (dev smoke)
+- [ ] iPad Screen Mirroring lists **artist-mirror** (same Wi‑Fi)
+- [ ] Video appears in the UxPlay window
+- [ ] Stop mirroring on iPad → receiver returns to waiting (no reboot)
+
+## F1 — First successful mirror (app / packaging)
 
 - [ ] Install/open app on Windows (no MSYS2 on cold machine once packaged)
 - [ ] App shows Ready
@@ -20,3 +28,4 @@ Stub for U1. Fill in after receive + shell work.
 
 - Date / Windows version / iPadOS version:
 - Issues:
+- Build note: UxPlay built with internal mDNS (`-DNO_MARCH_NATIVE=ON`); child-process integration for shell (U3).

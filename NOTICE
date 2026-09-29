@@ -1,8 +1,25 @@
 artist-mirror
 Copyright (c) 2026 artist-mirror contributors
 
-This product will incorporate third-party open-source components.
-Attributions will be listed here as receive-stack and media dependencies are vendored
-(for example UxPlay lineage, GStreamer plugins, and mDNS helpers).
+This product incorporates / will incorporate third-party open-source components:
 
-Until those components are included in the tree, this NOTICE is a stub.
+## UxPlay (receive stack)
+
+- Project: https://github.com/FDH2/UxPlay
+- License: GNU GPLv3 (see upstream LICENSE)
+- Role: AirPlay2 mirror/audio server used as a managed child process for v1
+- Local fetch/build: `receiver/build.ps1` → `receiver/uxplay/`
+
+UxPlay itself includes additional third-party code (e.g. playfair, llhttp, and
+related AirPlay stack lineage). See the upstream tree for full notices.
+
+## GStreamer (via MSYS2 UCRT64)
+
+- https://gstreamer.freedesktop.org/
+- Runtime plugins used for decode/display when running `uxplay.exe`
+- Packaged through MSYS2 mingw-w64-ucrt-x86_64-gst-* packages
+
+## mDNS
+
+- Default UxPlay ≥ 1.74 build uses UxPlay's internal minimal mDNSResponder
+  implementation (no Apple Bonjour SDK required for the default cmake config).

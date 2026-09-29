@@ -40,3 +40,6 @@ Desktop.ini
 CMakeCache.txt
 CMakeFiles/
 compile_commands.json
+
+# Upstream UxPlay clone + build (fetched by receiver/build.ps1)
+receiver/uxplay/

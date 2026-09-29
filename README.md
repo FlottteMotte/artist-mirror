@@ -29,7 +29,18 @@ Free Windows app that mirrors an iPad screen over the same Wi‑Fi into a clean,
 
 GNU GPLv3 — see [LICENSE](LICENSE). Third-party notices will live in [NOTICE](NOTICE).
 
+## Dev: receive stack (U2)
+
+Requires [MSYS2](https://www.msys2.org/) once. Then:
+
+```powershell
+.\receiver\build.ps1
+.\receiver\run.ps1
+```
+
+On the iPad (same Wi‑Fi): Screen Mirroring → **artist-mirror**. Details: [receiver/README.md](receiver/README.md).
+
 ## Docs
 
-- Smoke checklist (stub): [docs/artist-smoke-checklist.md](docs/artist-smoke-checklist.md)
+- Smoke checklist: [docs/artist-smoke-checklist.md](docs/artist-smoke-checklist.md)
 - Implementation plan: [docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md](docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md)
