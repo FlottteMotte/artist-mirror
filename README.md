@@ -1,23 +1,32 @@
 # artist-mirror
 
-Free Windows app that mirrors an iPad screen over the same Wi-Fi - for art progress in Discord / OBS.
+Free Windows app that mirrors an iPad screen over the same Wi‑Fi into a clean, shareable window
 
-**Status:** private / early development.
+## What it is
 
-## For artists (simple)
+- Windows-only receiver (v1)
+- Same home Wi‑Fi / local network
+- Stock iPadOS Screen Mirroring (AirPlay-style) — no paid iPad companion
+- Will be open source (GPLv3) once it works
 
-1. Unzip `artist-mirror-portable.zip`
-2. Double-click **Start.vbs** (or `ArtistMirror.exe`)
-3. Tap **Start**
-4. iPad (same Wi-Fi): Screen Mirroring -> **artist-mirror**
-5. Share that window in Discord / OBS
+## What it is not
 
-No PowerShell. No MSYS2. No terminal. Allow firewall if Windows asks.
+- Not a Twitch/YouTube built-in streamer
+- Not an iPad-as-drawing-tablet driver for PC apps
+- Not Mac/Linux (yet)
 
-## What it is / is not
+## Quick intent
 
-- Windows mirror receiver only
-- Not a Twitch login app, not an iPad drawing tablet driver
+1. Download the zip (`artist-mirror-portable.zip` or the `artist-mirror` folder).
+2. Unzip it somewhere easy, e.g. Desktop.
+3. Open the folder.
+4. Double-click **Start.vbs**  
+   (or double-click **ArtistMirror.exe** if you prefer)
+5. In the app, tap **Start**.
+6. Windows may warn that it protected your PC or ask whether to run the app. That is normal for unsigned portable apps.
+Click **More info**
+Click **Run anyway**
+If Windows Firewall asks to allow network access, click **Allow**. Without that, the iPad cannot find artist-mirror on Wi-Fi.
 
 ## License
 
@@ -29,8 +38,3 @@ GNU GPLv3 - see [LICENSE](LICENSE). Notices: [NOTICE](NOTICE).
 .\receiver\build.ps1
 .\packaging\package.ps1
 ```
-
-From the repo root you can also use `Start.vbs` after packaging.
-
-Output: `dist\artist-mirror\`  
-Docs: [receiver/README.md](receiver/README.md), [docs/plans/...](docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md)
