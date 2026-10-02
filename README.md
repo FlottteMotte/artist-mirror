@@ -1,46 +1,36 @@
 # artist-mirror
 
-Free Windows app that mirrors an iPad screen over the same Wi‑Fi into a clean, shareable window — so artists can show art progress in Discord, OBS, and similar tools.
+Free Windows app that mirrors an iPad screen over the same Wi-Fi - for art progress in Discord / OBS.
 
-**Status:** private / early development. Not ready for public use yet.
+**Status:** private / early development.
 
-## What it is
+## For artists (simple)
 
-- Windows-only receiver (v1)
-- Same home Wi‑Fi / local network
-- Stock iPadOS Screen Mirroring (AirPlay-style) — no paid iPad companion
-- You share the mirror window yourself (Discord, OBS, etc.)
-- Free, no paywall or account for core mirroring
-- Will be open source (GPLv3) once it works
+1. Unzip `artist-mirror-portable.zip`
+2. Double-click **Start.vbs** (or `ArtistMirror.exe`)
+3. Tap **Start**
+4. iPad (same Wi-Fi): Screen Mirroring -> **artist-mirror**
+5. Share that window in Discord / OBS
 
-## What it is not
+No PowerShell. No MSYS2. No terminal. Allow firewall if Windows asks.
 
-- Not a Twitch/YouTube built-in streamer
-- Not an iPad-as-drawing-tablet driver for PC apps
-- Not Mac/Linux (yet)
+## What it is / is not
 
-## Quick intent
-
-1. Install and open artist-mirror on Windows
-2. Start Screen Mirroring on your iPad and pick this receiver
-3. Share the mirror window in Discord or OBS
+- Windows mirror receiver only
+- Not a Twitch login app, not an iPad drawing tablet driver
 
 ## License
 
-GNU GPLv3 — see [LICENSE](LICENSE). Third-party notices will live in [NOTICE](NOTICE).
+GNU GPLv3 - see [LICENSE](LICENSE). Notices: [NOTICE](NOTICE).
 
-## Dev: receive stack (U2)
-
-Requires [MSYS2](https://www.msys2.org/) once. Then:
+## Maintainers
 
 ```powershell
 .\receiver\build.ps1
-.\receiver\run.ps1
+.\packaging\package.ps1
 ```
 
-On the iPad (same Wi‑Fi): Screen Mirroring → **artist-mirror**. Details: [receiver/README.md](receiver/README.md).
+From the repo root you can also use `Start.vbs` after packaging.
 
-## Docs
-
-- Smoke checklist: [docs/artist-smoke-checklist.md](docs/artist-smoke-checklist.md)
-- Implementation plan: [docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md](docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md)
+Output: `dist\artist-mirror\`  
+Docs: [receiver/README.md](receiver/README.md), [docs/plans/...](docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md)

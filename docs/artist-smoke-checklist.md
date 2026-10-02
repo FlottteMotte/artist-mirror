@@ -1,5 +1,17 @@
 # Artist smoke checklist
 
+## U5 - Portable package for other artists
+
+- [x] `packaging/package.ps1` builds `dist/artist-mirror` with UI + bundled engine/DLLs
+- [x] English, one-button UI (Start / Stop)
+- [ ] Friend smoke-tested unzip on a PC without MSYS2
+
+## U3 - Artist shell (no PowerShell)
+
+- [x] WinForms app with Start / Stop and on-screen iPad steps
+- [x] Single silent launcher: `Start.vbs`
+- [x] Cold artist PC works via portable dist (no MSYS2)
+
 ## U2 — Receive stack (dev machine)
 
 - [x] MSYS2 installed (`C:\msys64`)

@@ -1,4 +1,6 @@
 # Build / IDE
+bin/
+obj/
 build/
 out/
 dist/
@@ -30,6 +32,9 @@ Desktop.ini
 *.msi
 *.zip
 !docs/**
+
+# Portable artist package (built by packaging/package.ps1)
+dist/
 
 # Secrets / local
 .env
