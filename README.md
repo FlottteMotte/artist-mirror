@@ -1,16 +1,12 @@
 # artist-mirror
 
-Free Windows app that mirrors an iPad screen over the same Wi‑Fi into a clean, shareable window — so artists can show art progress in Discord, OBS, and similar tools.
-
-**Status:** private / early development. Not ready for public use yet.
+Free Windows app that mirrors an iPad screen over the same Wi‑Fi into a clean, shareable window
 
 ## What it is
 
 - Windows-only receiver (v1)
 - Same home Wi‑Fi / local network
 - Stock iPadOS Screen Mirroring (AirPlay-style) — no paid iPad companion
-- You share the mirror window yourself (Discord, OBS, etc.)
-- Free, no paywall or account for core mirroring
 - Will be open source (GPLv3) once it works
 
 ## What it is not
@@ -21,9 +17,16 @@ Free Windows app that mirrors an iPad screen over the same Wi‑Fi into a clean,
 
 ## Quick intent
 
-1. Install and open artist-mirror on Windows
-2. Start Screen Mirroring on your iPad and pick this receiver
-3. Share the mirror window in Discord or OBS
+1. Download the zip (`artist-mirror-portable.zip` or the `artist-mirror` folder).
+2. Unzip it somewhere easy, e.g. Desktop.
+3. Open the folder.
+4. Double-click **Start.vbs**  
+   (or double-click **ArtistMirror.exe** if you prefer)
+5. In the app, tap **Start**.
+6. Windows may warn that it protected your PC or ask whether to run the app. That is normal for unsigned portable apps.
+Click **More info**
+Click **Run anyway**
+If Windows Firewall asks to allow network access, click **Allow**. Without that, the iPad cannot find artist-mirror on Wi-Fi.
 
 ## License
 
@@ -37,10 +40,3 @@ Requires [MSYS2](https://www.msys2.org/) once. Then:
 .\receiver\build.ps1
 .\receiver\run.ps1
 ```
-
-On the iPad (same Wi‑Fi): Screen Mirroring → **artist-mirror**. Details: [receiver/README.md](receiver/README.md).
-
-## Docs
-
-- Smoke checklist: [docs/artist-smoke-checklist.md](docs/artist-smoke-checklist.md)
-- Implementation plan: [docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md](docs/plans/2026-09-05-001-feat-ipad-windows-mirror-plan.md)
